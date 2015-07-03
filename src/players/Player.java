@@ -1,5 +1,5 @@
 package players;
 
-public class Player {
-
+public abstract class Player {
+	private int balance;
 }

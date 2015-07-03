@@ -1,10 +1,27 @@
 package utilities;
-
+import deck.*;
+import players.*; 
 public class BlackjackTester {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Deck d = new Deck();
+		//NOT USED
+		//User me = new User();
+		//AIPlayers ai1 = new AIPlayers();
+		
+		//Displays entire deck values 1-52
+		for(int i=0; i<52; i++) {
+			System.out.print(d.getCard(i) + " ");
+		}
+		
+		d.shuffle();
+		
+		System.out.println("\n\nShuffle attempt");
+		
+		//Displays the shuffled deck
+		for(int i=0; i<52; i++) {
+			System.out.print(d.getCard(i) + " ");
+		}
 	}
 
 }
