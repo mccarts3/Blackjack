@@ -6,10 +6,12 @@ import java.util.Random;
 public class Deck {
 	private Card[] cards;
 	private Random generator;
+	private int index;
 	
 	public Deck() {
 		generator = new Random();
 		cards = new Card[52];
+		index=0;
 		init();
 	}
 	
@@ -39,4 +41,9 @@ public class Deck {
 			cardsShuffled++;
 		}
 	}
+	
+	public Card pop() {
+		return cards[index++];
+	}
+	
 }

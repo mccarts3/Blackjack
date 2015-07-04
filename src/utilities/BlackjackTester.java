@@ -22,6 +22,10 @@ public class BlackjackTester {
 		for(int i=0; i<52; i++) {
 			System.out.print(d.getCard(i) + " ");
 		}
+		
+		System.out.println("\n\nDeal the first three cards.");
+		System.out.print(d.pop().getCardNum() + " " + d.pop().getCardNum() +
+				" " + d.pop().getCardNum());
 	}
 
 }
