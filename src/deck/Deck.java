@@ -21,8 +21,8 @@ public class Deck {
 		}
 	}
 	
-	public int getCard(int i) {
-		return cards[i].getCardNum();
+	public Card getCard(int i) {
+		return cards[i];
 	}
 	
 	public void shuffle() {
@@ -43,6 +43,10 @@ public class Deck {
 	}
 	
 	public Card pop() {
+		if(index >= 52) {
+			throw new ArrayIndexOutOfBoundsException("The entire deck has been dealt.");
+		}
+		
 		return cards[index++];
 	}
 	
