@@ -9,9 +9,9 @@ public class BlackjackTester {
 		//User me = new User();
 		//AIPlayers ai1 = new AIPlayers();
 		
-		//Displays entire deck values 1-52
+		//Displays entire deck values 1-52 and their name
 		for(int i=0; i<52; i++) {
-			System.out.print(d.getCard(i).getCardNum() + " ");
+			System.out.println(d.getCard(i).getCardNum() + " " + d.getCard(i).getCardName());
 		}
 		
 		System.out.println("\n\nThe values of each card used in Blackjack:");
